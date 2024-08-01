@@ -112,6 +112,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
+    margin-bottom: 15px;
 
     span {
         color: rgb(243, 95, 50);
@@ -123,6 +124,39 @@ a {
 
         margin: 0%;
         color: #393e47;
+    }
+}
+
+.discountSpan {
+    margin-top: 20px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(253, 29, 29, 0.847) 15%, rgba(252, 233, 69, 0.875) 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 75% 25%;
+    }
+
+    50% {
+        background-position: 75% 25%;
+    }
+
+    75% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 

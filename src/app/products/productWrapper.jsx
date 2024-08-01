@@ -1,5 +1,18 @@
+import { useState } from "react";
+
 export const ProductWrapper = ({ product }) => {
-    console.log(product.thumbnails[0]);
+
+    const [count, setCount] = useState(0)
+    const stockInBtn = (stock) => {
+        if (count != stock) {
+            setCount(count + 1)
+        }
+    }
+    const stockOutBtn = () => {
+        if (count > 0) {
+            setCount(count - 1)
+        }
+    }
     return (
 
         <>
@@ -31,9 +44,9 @@ export const ProductWrapper = ({ product }) => {
 
                     <div className="stockAndCart">
                         <div className="stock">
-                            <span className="stockOut">-</span>
-                            <span>0</span>
-                            <span className="stockIn">+</span>
+                            <span className="stockOut" onClick={stockOutBtn}>-</span>
+                            <span>{count}</span>
+                            <span className="stockIn" onClick={() => stockInBtn(product.discount)}>+</span>
                         </div>
 
                         <div className="cart">

@@ -20,11 +20,14 @@ export default function GetProducts() {
                                     <span>{product.name}</span>
                                     <p>{product.description}</p>
                                 </div>
-                                <div className="product-one-second">
-                                    <span>{product.price}₺</span>
-                                    <p> stok:{product.stock}</p>
+                                <div>
+                                    <div className="product-one-second">
+
+                                        <span>{product.price}₺</span>
+                                        <p> stok:{product.stock}</p>
+                                    </div>
+                                    <span className="discountSpan">%{product.discount}  indirim</span>
                                 </div>
-                                <span>Sepette %{product.discount}  indirim</span>
                             </div>
                         </Link>
                     )

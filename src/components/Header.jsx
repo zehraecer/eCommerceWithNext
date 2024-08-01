@@ -22,7 +22,7 @@ export const Header = () => {
                     <img style={{ width: "50px", height: "50px" }} src="avatar.png" alt="" />
                 </div>
             </div>
-            <div style={{ marginTop: "45px", border: "1px solid red" }}>
+            <div style={{ marginTop: "45px", border: "1px solid #E4E9F2" }}>
 
             </div>
         </>
