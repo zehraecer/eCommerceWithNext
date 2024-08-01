@@ -3,26 +3,17 @@ import { useState } from "react";
 export const ProductWrapper = ({ product }) => {
 
     const [count, setCount] = useState(0)
-    const stockInBtn = (stock) => {
-        if (count != stock) {
-            setCount(count + 1)
-        }
+    const addToCart = () => {
+        console.log("nsdjgk");
     }
-    const stockOutBtn = () => {
-        if (count > 0) {
-            setCount(count - 1)
-        }
-    }
+    const stockInBtn = (stock) => { count != stock ? setCount(count + 1) : setCount(count) }
+    const stockOutBtn = () => { count > 0 ? setCount(count - 1) : setCount(count) }
 
-    console.log(typeof product.price);
     const calculateDiscount = () => {
-
-
-        const deneme = Number(product.price) - (Number(product.price) * (Number(product.discount / 100)))
-        return deneme
+        const price = Number(product.price) - (Number(product.price) * (Number(product.discount / 100)))
+        return price
     }
-    const x = calculateDiscount()
-    console.log(typeof x);
+    const reducedPrice = calculateDiscount()
     return (
 
         <>
@@ -44,7 +35,7 @@ export const ProductWrapper = ({ product }) => {
 
                     <div className="priceDiv">
                         <div>
-                            <span className="discountedPrice">{Number(x.toFixed(2))}</span>
+                            <span className="discountedPrice">{Number(reducedPrice.toFixed(2))}</span>
                             <span className="price">{product.price}</span>
                         </div>
                         <div className="productDiscount">
@@ -56,10 +47,10 @@ export const ProductWrapper = ({ product }) => {
                         <div className="stock">
                             <span className="stockOut" onClick={stockOutBtn}>-</span>
                             <span>{count}</span>
-                            <span className="stockIn" onClick={() => stockInBtn(product.discount)}>+</span>
+                            <span className="stockIn" onClick={() => stockInBtn(product.stock)}>+</span>
                         </div>
 
-                        <div className="cart">
+                        <div className="cart" onClick={() => addToCart(product.id)}>
                             <img src="../white-shape.svg" alt="" />
                             Add to cart
                         </div>

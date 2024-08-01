@@ -3,6 +3,8 @@
 body {
 
     background-color: white;
+    user-select: none;
+
 }
 
 a {
@@ -135,7 +137,7 @@ a {
     font-weight: 700;
     background: linear-gradient(90deg, rgba(253, 29, 29, 0.847) 15%, rgba(252, 233, 69, 0.875) 100%);
     background-size: 200% 200%;
-    animation: gradientAnimation 3s ease infinite;
+    animation: gradientAnimation 1s ease infinite;
 }
 
 @keyframes gradientAnimation {
@@ -272,19 +274,20 @@ a {
 }
 
 .stock {
-
     span {
         background-color: #F6F8FD;
         padding: 13px 16px;
         font-size: 21px;
         /* color: #1D2026; */
         font-weight: 900;
+        cursor: pointer;
 
     }
 }
 
 
 .stockOut {
+
     color: #FF7E1B;
     border-radius: 10px 0px 0px 10px;
 }
