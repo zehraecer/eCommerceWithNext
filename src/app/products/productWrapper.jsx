@@ -13,6 +13,16 @@ export const ProductWrapper = ({ product }) => {
             setCount(count - 1)
         }
     }
+
+    console.log(typeof product.price);
+    const calculateDiscount = () => {
+
+
+        const deneme = Number(product.price) - (Number(product.price) * (Number(product.discount / 100)))
+        return deneme
+    }
+    const x = calculateDiscount()
+    console.log(typeof x);
     return (
 
         <>
@@ -34,7 +44,7 @@ export const ProductWrapper = ({ product }) => {
 
                     <div className="priceDiv">
                         <div>
-                            <span className="discountedPrice">125</span>
+                            <span className="discountedPrice">{Number(x.toFixed(2))}</span>
                             <span className="price">{product.price}</span>
                         </div>
                         <div className="productDiscount">
