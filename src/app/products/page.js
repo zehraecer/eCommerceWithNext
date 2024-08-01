@@ -8,16 +8,28 @@ export default function GetProducts() {
 
     return (
         <>
-            {Products.map(product => {
-                return (
-                    <Link href={`/products/${product.id}`}>
-                        <div>
-                            <span>{product.description}</span>
-                            <img style={{ width: "100px", height: "100px" }} src={product.image} />
-                        </div>
-                    </Link>
-                )
-            })}
+            <div className="productsGrid">
+                {Products.map(product => {
+                    return (
+                        <Link href={`/products/${product.id}`} >
+                            <div className="product-one">
+                                <div className="product-one-img">
+                                    <img src={product.image} />
+                                </div>
+                                <div className="product-one-first">
+                                    <span>{product.name}</span>
+                                    <p>{product.description}</p>
+                                </div>
+                                <div className="product-one-second">
+                                    <span>{product.price}₺</span>
+                                    <p> stok:{product.stock}</p>
+                                </div>
+                                <span>Sepette %{product.discount}  indirim</span>
+                            </div>
+                        </Link>
+                    )
+                })}
+            </div>
         </>
     )
 }
