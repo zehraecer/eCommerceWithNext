@@ -11,7 +11,7 @@ export default function GetProducts() {
             <div className="productsGrid">
                 {Products.map(product => {
                     return (
-                        <Link href={`/products/${product.id}`} >
+                        <Link href={`/products/${product.id}`} key={product.id}>
                             <div className="product-one">
                                 <div className="product-one-img">
                                     <img src={product.image} />
