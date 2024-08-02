@@ -299,6 +299,7 @@ a {
 }
 
 .cart {
+    cursor: pointer;
     padding: 19px 76px;
     background-color: #FF7E1B;
     font-family: Kumbh Sans;

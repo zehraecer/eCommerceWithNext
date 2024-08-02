@@ -35,7 +35,7 @@ export const Basket = () => {
                                 <div className="detailMiddle">
                                     <span className="fallSpan">{product.title}</span>
                                     <div className="detailMiddleOne">
-                                        <span className="firstPrice">{reducedPrice}x <span>{product.piece}</span></span>
+                                        <span className="firstPrice">{reducedPrice.toFixed(2)}x <span>{product.piece}</span></span>
                                         <span className="totalPrice">$ {(reducedPrice * product.piece).toFixed(2)}</span>
                                     </div>
                                 </div>

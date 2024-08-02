@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "kolye",
+        "name": "bileklik",
         "title": "Çelik Kolye",
         "description": "ALTIN RENK MİNELİ ZİRKON TAŞ BİLEKLİK",
         "price": 219.99,
@@ -22,7 +22,7 @@
         "description": " ALTIN RENK FİGARO ZİNCİR BİLEKLİK",
         "price": 259.99,
         "category": 1,
-        "discount": "10",
+        "discount": "7",
         "image": "bileklik2.jpg",
         "stock": 10,
         "thumbnails": [
@@ -38,7 +38,7 @@
         "description": "GOLD TAŞLI AŞK KOLYE",
         "price": 279.99,
         "category": 2,
-        "discount": "10",
+        "discount": "15",
         "image": "kolye1.jpg",
         "stock": 25,
         "thumbnails": [
@@ -54,7 +54,7 @@
         "description": "GOLD ZİNCİRLİ BEYAZ KALP KOLYE",
         "price": 249.99,
         "category": 3,
-        "discount": "10",
+        "discount": "50",
         "image": "kupe1.jpg",
         "stock": 45,
         "thumbnails": [
@@ -70,7 +70,7 @@
         "description": "BEYAZ KELEBEK ŞIK KOLYE",
         "price": 139.99,
         "category": 4,
-        "discount": "10",
+        "discount": "20",
         "image": "yuzuk1.jpg",
         "stock": 36,
         "thumbnails": [
@@ -81,12 +81,12 @@
     },
     {
         "id": 6,
-        "name": "Parla",
+        "name": "yüzük",
         "title": "Çelik Bileklik",
         "description": "ALTIN RENGİ KOLYE",
         "price": 320.99,
         "category": 4,
-        "discount": "10",
+        "discount": "22",
         "image": "yuzuk2.jpg",
         "stock": 58,
         "thumbnails": [
@@ -97,12 +97,12 @@
     },
     {
         "id": 7,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "KELEBEK FİGÜRLÜ KOLYE",
         "price": 289.99,
         "category": 2,
-        "discount": "10",
+        "discount": "17",
         "image": "kolye2.jpg",
         "stock": 14,
         "thumbnails": [
@@ -113,12 +113,12 @@
     },
     {
         "id": 8,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "TAŞLI KALP KOLYE",
         "price": 259.99,
         "category": 2,
-        "discount": "10",
+        "discount": "19",
         "image": "kolye3.jpg",
         "stock": 25,
         "thumbnails": [
@@ -129,12 +129,12 @@
     },
     {
         "id": 9,
-        "name": "Parla",
+        "name": "bileklik",
         "title": "Çelik Bileklik",
         "description": "YILDIZ KOLYE",
         "price": 319.99,
         "category": 1,
-        "discount": "10",
+        "discount": "30",
         "image": "bileklik2.jpg",
         "stock": 22,
         "thumbnails": [
@@ -145,12 +145,12 @@
     },
     {
         "id": 10,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "YILDIZ KOLYE",
         "price": 329.99,
         "category": 2,
-        "discount": "10",
+        "discount": "40",
         "image": "kolye4.jpg",
         "stock": 32,
         "thumbnails": [
@@ -161,12 +161,12 @@
     },
     {
         "id": 11,
-        "name": "Parla",
+        "name": "yüzük",
         "title": "Çelik Bileklik",
         "description": "BAGET KOLYE",
         "price": 299.99,
         "category": 4,
-        "discount": "10",
+        "discount": "15",
         "image": "yuzuk3.jpg",
         "stock": 21,
         "thumbnails": [
@@ -177,12 +177,12 @@
     },
     {
         "id": 12,
-        "name": "Parla",
+        "name": "küpe",
         "title": "Çelik Bileklik",
         "description": "KALP BAGET KOLYE",
         "price": 259.99,
         "category": 3,
-        "discount": "10",
+        "discount": "25",
         "image": "kupe2.jpg",
         "stock": 19,
         "thumbnails": [
@@ -193,12 +193,12 @@
     },
     {
         "id": 13,
-        "name": "Parla",
+        "name": "küpe",
         "title": "Çelik Bileklik",
         "description": "ALTIN RENK YILDIZ KOLYE",
         "price": 279.99,
         "category": 3,
-        "discount": "10",
+        "discount": "55",
         "image": "kupe4.jpg",
         "stock": 21,
         "thumbnails": [
@@ -209,12 +209,12 @@
     },
     {
         "id": 14,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "BEYAZ KALPLİ GÜMÜŞ RENK KOLYE",
         "price": 219.99,
         "category": 2,
-        "discount": "10",
+        "discount": "22",
         "image": "kolye5.jpg",
         "stock": 33,
         "thumbnails": [
@@ -225,12 +225,12 @@
     },
     {
         "id": 15,
-        "name": "Parla",
+        "name": "bileklik",
         "title": "Çelik Bileklik",
         "description": "BEYAZ KALP KOLYE",
         "price": 289.99,
         "category": 1,
-        "discount": "10",
+        "discount": "14",
         "image": "bileklik3.jpg",
         "stock": 41,
         "thumbnails": [
@@ -241,12 +241,12 @@
     },
     {
         "id": 16,
-        "name": "Parla",
+        "name": "bileklik",
         "title": "Çelik Bileklik",
         "description": "3'LÜ AJDA BİLEZİK",
         "price": 339.99,
         "category": 1,
-        "discount": "10",
+        "discount": "33",
         "image": "bileklik4.jpg",
         "stock": 8,
         "thumbnails": [
@@ -257,12 +257,12 @@
     },
     {
         "id": 17,
-        "name": "Parla",
+        "name": "küpe",
         "title": "Çelik Bileklik",
         "description": "KALP DETAYLI ESNEK BİLEKLİK",
         "price": 319.99,
         "category": 3,
-        "discount": "10",
+        "discount": "30",
         "image": "kupe3.jpg",
         "stock": 12,
         "thumbnails": [
@@ -273,12 +273,12 @@
     },
     {
         "id": 18,
-        "name": "Parla",
+        "name": "küpe",
         "title": "Çelik Bileklik",
         "description": "GÜMÜŞ RENK SU YOLU BİLEKLİK",
         "price": 329.99,
         "category": 3,
-        "discount": "10",
+        "discount": "20",
         "image": "kupe5.jpg",
         "stock": 11,
         "thumbnails": [
@@ -289,12 +289,12 @@
     },
     {
         "id": 19,
-        "name": "Parla",
+        "name": "yüzük",
         "title": "Çelik Bileklik",
         "description": "TAŞLI İTALYAN BİLEKLİK",
         "price": 285.99,
         "category": 4,
-        "discount": "10",
+        "discount": "25",
         "image": "yuzuk4.jpg",
         "stock": 17,
         "thumbnails": [
@@ -305,12 +305,12 @@
     },
     {
         "id": 20,
-        "name": "Parla",
+        "name": "yüzük",
         "title": "Çelik Bileklik",
         "description": "ÇİÇEKLİ SU YOLU BİLEKLİK",
         "price": 255.99,
         "category": 4,
-        "discount": "10",
+        "discount": "18",
         "image": "yuzuk5.jpg",
         "stock": 14,
         "thumbnails": [
@@ -321,12 +321,12 @@
     },
     {
         "id": 21,
-        "name": "Parla",
+        "name": "bileklik",
         "title": "Çelik Bileklik",
         "description": "SİYAH BEYAZ SEDEF TAŞLI BİLEKLİK",
         "price": 247.99,
         "category": 1,
-        "discount": "10",
+        "discount": "40",
         "image": "bileklik5.jpg",
         "stock": 27,
         "thumbnails": [
@@ -337,7 +337,7 @@
     },
     {
         "id": 22,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "ALTIN RENK FİGARO ZİNCİR BİLEKLİK",
         "price": 274.99,
