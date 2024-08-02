@@ -22,8 +22,8 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className="headerRight">
-                    <img style={{ width: "20px", height: "20px" }} src="Shape.png" alt="" onClick={() => setIsClicked(!isClicked)} />
-                    <img style={{ width: "50px", height: "50px" }} src="avatar.png" alt="" />
+                    <img style={{ width: "20px", height: "20px", cursor: "pointer" }} src="../Shape.png" alt="" onClick={() => setIsClicked(!isClicked)} />
+                    <img style={{ width: "50px", height: "50px" }} src="../avatar.png" alt="" />
                 </div>
             </div>
             <div style={{ marginTop: "45px", border: "1px solid #E4E9F2" }}>

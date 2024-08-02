@@ -387,6 +387,7 @@ a {
 }
 
 .checkout {
+    cursor: pointer;
     padding: 20px 120px;
     background-color: #FF7E1B;
     margin-bottom: 32px;
@@ -396,4 +397,14 @@ a {
     span {
         color: #FFFFFF
     }
+}
+
+.emptyBasket {
+    padding: 77px 109px;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    color: #69707D;
 }

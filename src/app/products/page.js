@@ -1,11 +1,47 @@
-"use client"
 import Products from "@/data/product.json"
 import Link from "next/link";
-export default function GetProducts() {
+import { FilteredProducts } from "@/action";
+export default function GetProducts({ searchParams }) {
+    console.log(searchParams.productPrice);
+    console.log(searchParams.productTitle);
+
+
+    let filteredProduct = Products;
+    // if (searchParams.productName) {
+    //     filteredProduct = filteredProduct.filter((product) => product.title.toLowerCase().includes(searchParams.productName.toLowerCase()))
+    // }
+    // if (searchParams.productTitle) {
+    //     filteredProduct = filteredProduct.filter((product) => product.name === searchParams.productTitle)
+
+    // }
+    if (searchParams.productPrice) {
+        filteredProduct = filteredProduct.filter((product) => {
+            const newPrice = product.price.toString().split(".")[0]
+            return parseInt(newPrice) < parseInt(searchParams.productPrice);
+        }
+
+        )
+    }
+    console.log(filteredProduct);
+
     return (
         <>
+            <form action={FilteredProducts}>
+                {/* <input type="text" name="productName" />
+                <select name="productTitle" >
+                    <option value="yüzük">yüzük</option>
+                    <option value="kolye">kolye</option>
+                    <option value="küpe">küpe</option>
+                    <option value="bileklik">bileklik</option>
+                </select> */}
+                <select name="productPrice" >
+                    <option value="250">100-250</option>
+                    <option value="350">250-350</option>
+                </select>
+                <button type="submit">Filtrele</button>
+            </form>
             <div className="productsGrid">
-                {Products.map(product => {
+                {filteredProduct.map(product => {
                     return (
                         <div key={product.id}>
                             <div className="product-one">

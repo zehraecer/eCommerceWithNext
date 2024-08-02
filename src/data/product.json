@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Parla",
-        "title": "Çelik Bileklik",
+        "name": "kolye",
+        "title": "Çelik Kolye",
         "description": "ALTIN RENK MİNELİ ZİRKON TAŞ BİLEKLİK",
         "price": 219.99,
         "category": 1,
@@ -17,7 +17,7 @@
     },
     {
         "id": 2,
-        "name": "Parla",
+        "name": "bileklik",
         "title": "Çelik Bileklik",
         "description": " ALTIN RENK FİGARO ZİNCİR BİLEKLİK",
         "price": 259.99,
@@ -33,7 +33,7 @@
     },
     {
         "id": 3,
-        "name": "Parla",
+        "name": "kolye",
         "title": "Çelik Bileklik",
         "description": "GOLD TAŞLI AŞK KOLYE",
         "price": 279.99,
@@ -49,7 +49,7 @@
     },
     {
         "id": 4,
-        "name": "Parla",
+        "name": "küpe",
         "title": "Çelik Bileklik",
         "description": "GOLD ZİNCİRLİ BEYAZ KALP KOLYE",
         "price": 249.99,
@@ -65,7 +65,7 @@
     },
     {
         "id": 5,
-        "name": "Parla",
+        "name": "yüzük",
         "title": "Çelik Bileklik",
         "description": "BEYAZ KELEBEK ŞIK KOLYE",
         "price": 139.99,
