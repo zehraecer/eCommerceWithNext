@@ -20,6 +20,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .headerLeft {
@@ -311,5 +312,88 @@ a {
     img {
 
         margin-right: 15px;
+    }
+}
+
+.basket {
+    display: none;
+    position: absolute;
+    right: 90px;
+    top: 80px;
+    background-color: white;
+    box-shadow: 0px 20px 50px -20px #1D202680;
+    border-radius: 10px;
+
+}
+
+.cartSpan {
+    padding: 24px 0px 24px 24px;
+    border-bottom: 1px solid #E4E9F2;
+
+    span {
+        font-family: Kumbh Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.84px;
+        text-align: left;
+
+    }
+}
+
+.basketDetail {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+
+    img {
+
+        border-radius: 4px;
+    }
+}
+
+.fallSpan {
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #69707D;
+
+}
+
+.firstPrice {
+    color: #69707D;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+
+}
+
+.detailMiddleOne {
+    display: flex;
+    gap: 6px;
+}
+
+.totalPrice {
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #1D2026;
+}
+
+.checkout {
+    padding: 20px 120px;
+    background-color: #FF7E1B;
+    margin-bottom: 32px;
+    margin-inline: 24px;
+    border-radius: 10px;
+
+    span {
+        color: #FFFFFF
     }
 }

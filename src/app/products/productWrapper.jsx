@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { MyContext } from "../context";
 
 export const ProductWrapper = ({ product }) => {
-    const { cart, setCart } = useContext(MyContext)
+    const { cart, setCart, reducedPrice, setReducedPrice } = useContext(MyContext)
     const [count, setCount] = useState(0)
 
     const addToCart = (param) => {
@@ -13,7 +13,19 @@ export const ProductWrapper = ({ product }) => {
         if (param === product.id) {
             if (deneme.length > 0) {
                 console.log("var");
-                let newPiece = cart.map((item) => item.id === param ? { ...item, piece: item.piece + count } : item)
+                let newPiece = cart.map((item) => {
+                    if (item.id === param) {
+                        if (item.piece < product.stock) {
+                            return (
+                                { ...item, piece: item.piece + count }
+                            )
+                        } else {
+                            return (
+                                { ...item, piece: product.stock }
+                            )
+                        }
+                    }
+                })
                 setCart(newPiece)
             } else {
                 const itemsInCart = {
@@ -21,24 +33,24 @@ export const ProductWrapper = ({ product }) => {
                     name: product.name,
                     title: product.title,
                     piece: count,
-                    img: product.image
+                    img: product.image,
+                    price: product.price
                 }
                 setCart([...cart, itemsInCart])
             }
         }
     }
-    console.log(cart);
-
 
     const stockInBtn = (stock) => { count != stock ? setCount(count + 1) : setCount(count) }
     const stockOutBtn = () => { count > 0 ? setCount(count - 1) : setCount(count) }
 
     const calculateDiscount = () => {
         const price = Number(product.price) - (Number(product.price) * (Number(product.discount / 100)))
-        return price
+        setReducedPrice(price)
     }
 
-    const reducedPrice = calculateDiscount()
+    // const reducedPrice = calculateDiscount()
+    calculateDiscount()
     return (
 
         <>
