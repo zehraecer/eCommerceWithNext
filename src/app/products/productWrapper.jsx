@@ -1,11 +1,35 @@
 import { useState } from "react";
+import { useContext } from "react";
+import { MyContext } from "../context";
 
 export const ProductWrapper = ({ product }) => {
-
+    const { cart, setCart } = useContext(MyContext)
     const [count, setCount] = useState(0)
-    const addToCart = () => {
-        console.log("nsdjgk");
+
+    const addToCart = (param) => {
+        let deneme = cart.filter(cart => cart.id === param)
+        setCount(0)
+
+        if (param === product.id) {
+            if (deneme.length > 0) {
+                console.log("var");
+                let newPiece = cart.map((item) => item.id === param ? { ...item, piece: item.piece + count } : item)
+                setCart(newPiece)
+            } else {
+                const itemsInCart = {
+                    id: product.id,
+                    name: product.name,
+                    title: product.title,
+                    piece: count,
+                    img: product.image
+                }
+                setCart([...cart, itemsInCart])
+            }
+        }
     }
+    console.log(cart);
+
+
     const stockInBtn = (stock) => { count != stock ? setCount(count + 1) : setCount(count) }
     const stockOutBtn = () => { count > 0 ? setCount(count - 1) : setCount(count) }
 
@@ -13,6 +37,7 @@ export const ProductWrapper = ({ product }) => {
         const price = Number(product.price) - (Number(product.price) * (Number(product.discount / 100)))
         return price
     }
+
     const reducedPrice = calculateDiscount()
     return (
 

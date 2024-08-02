@@ -1,21 +1,17 @@
 "use client"
 import Products from "@/data/product.json"
 import Link from "next/link";
-
 export default function GetProducts() {
-
-    console.log(Products);
-
     return (
         <>
             <div className="productsGrid">
                 {Products.map(product => {
                     return (
-                        <Link href={`/products/${product.id}`} key={product.id}>
+                        <div key={product.id}>
                             <div className="product-one">
-                                <div className="product-one-img">
+                                <Link href={`/products/${product.id}`} className="product-one-img">
                                     <img src={product.image} />
-                                </div>
+                                </Link>
                                 <div className="product-one-first">
                                     <span>{product.name}</span>
                                     <p>{product.description}</p>
@@ -29,7 +25,7 @@ export default function GetProducts() {
                                     <span className="discountSpan">%{product.discount}  indirim</span>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     )
                 })}
             </div>
