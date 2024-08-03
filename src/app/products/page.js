@@ -15,7 +15,7 @@ export default function GetProducts({ searchParams }) {
     if (searchParams.productPrice) {
         filteredProduct = filteredProduct.filter((product) => {
             const newPrice = product.price.toString().split(".")[0]
-            return parseInt(newPrice) < parseInt(searchParams.productPrice);
+            return parseInt(newPrice) < searchParams.productPrice;
         }
 
         )
@@ -32,10 +32,11 @@ export default function GetProducts({ searchParams }) {
                     <option value="küpe">küpe</option>
                     <option value="bileklik">bileklik</option>
                 </select>
-                <select name="productPrice" >
+                <input type="number" name="productPrice" placeholder="minimum fiyat giriniz" />
+                {/* <select name="productPrice" >
                     <option value="250">100-250</option>
                     <option value="350">100-350</option>
-                </select>
+                </select> */}
                 <button type="submit">Filtrele</button>
             </form>
             <div className="productsGrid">
