@@ -3,19 +3,21 @@
 import { redirect } from "next/navigation";
 
 export const FilteredProducts = (formData) => {
-    const productName = formData.get("productName")
-    const productTitle = formData.get("productTitle")
+
+    const query = []
+    const productName = formData.get("productTitle")
+    const productTitle = formData.get("productName")
     const productPrice = formData.get("productPrice")
-    console.log(productName);
-    console.log(formData);
     if (productName) {
-        return redirect(`/products/?productName=${productName}`)
+        query.push(`productName=${productName}`)
     }
     if (productTitle) {
-        return redirect(`/products/?productTitle=${productTitle}`)
+        query.push(`productTitle=${productTitle}`)
     }
     if (productPrice) {
-        return redirect(`/products/?productPrice=${productPrice}`)
+        query.push(`productPrice=${productPrice}`)
     }
+    console.log(query);
+    return redirect(`/products?${query.join("&")}`)
 
 }

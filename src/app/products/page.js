@@ -4,8 +4,6 @@ import { FilteredProducts } from "@/action";
 export default function GetProducts({ searchParams }) {
     console.log(searchParams.productPrice);
     console.log(searchParams.productTitle);
-
-
     let filteredProduct = Products;
     if (searchParams.productName) {
         filteredProduct = filteredProduct.filter((product) => product.title.toLowerCase().includes(searchParams.productName.toLowerCase()))
@@ -22,13 +20,13 @@ export default function GetProducts({ searchParams }) {
 
         )
     }
-    console.log(filteredProduct);
 
     return (
         <>
             <form action={FilteredProducts}>
-                <input type="text" name="productName" />
-                <select name="productTitle" >
+                <input type="text" name="productTitle" />
+                <select name="productName">
+                    <option value="">seçiniz</option>
                     <option value="yüzük">yüzük</option>
                     <option value="kolye">kolye</option>
                     <option value="küpe">küpe</option>
@@ -36,7 +34,7 @@ export default function GetProducts({ searchParams }) {
                 </select>
                 <select name="productPrice" >
                     <option value="250">100-250</option>
-                    <option value="350">250-350</option>
+                    <option value="350">100-350</option>
                 </select>
                 <button type="submit">Filtrele</button>
             </form>
